@@ -14,5 +14,5 @@ RUN dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-rele
 #	dnf swap -y ffmpeg-free ffmpeg --allowerasing && dnf update -y @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin && dnf group install -y sound-and-video" && dnf swap -y mesa-va-drivers mesa-va-drivers-freeworld && dnf swap -y mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 
 #configure unit files
-RUN systemctl enable lm_sensors sysstat tuned fstrim.timer podman.socket podman-auto-update.timer cockpit.socket libvirtd.socket && \
-systemctl set-default graphical.target
+#RUN systemctl enable lm_sensors sysstat tuned fstrim.timer podman.socket podman-auto-update.timer cockpit.socket libvirtd.socket && \
+#systemctl set-default graphical.target
